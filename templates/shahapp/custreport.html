@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet"  href="/static/shah.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+</head>
+<nav class="navbar navbar-default navbar-inverse">
+			<div class="container">
+		<div class="navbar-header">
+			
+			<a class="navbar-brand" href="/">Home</a>
+
+</div>
+
+	<p class="navbar-text navbar-right">  <a href="https://www.indiamart.com/shah-industries-silvassa/" class="navbar-link">Order from indiamart</a></p>
+
+
+	<ul class="nav navbar-nav ">
+		<li class="disabled"><a href="/contact">Contact Us</a></li>
+		<li class="disabled"><a href="/about">About</a></li>
+		<li class="disabled"><a href="/AvailableStock">Check Availability</a></li>
+		<li class="disabled"><a href="/customerinfo/">Order Now</a></li>
+
+	
+	</ul>
+</div>
+
+</nav>
+
+<body id="report">
+	<div class="jumbotron" style="background-color:#6b5876;">
+	<h1 align="center">Customers who have placed orders</h1>
+</div>
+	<table border="2" align="center" style="font-size: 23px;" >
+		<thead >
+			<th>Id</th>
+			<th>First Name</th>
+			<th>Last Name</th>
+			<th>Product Name</th>
+			<th>Company Name</th>
+			<th>Quantity in KG</th>
+			<th>Contact Number</th>
+			<th>Action</th>
+
+		</thead>
+		{% for customers in customerdata %}
+		<tr>
+			<td>{{customers.id}}</td>
+		<td>{{customers.first_Name}}</td>
+		<td>{{customers.last_Name}}</td>
+		<td>{{customers.Product_Name}}</td>
+		<td>{{customers.Company_Name}}</td>
+		<td>{{customers.Quantity_in_KG}}</td>
+		<td>{{customers.Contact_Number}}</td>
+		<td><a href="/delete/{{customers.id}}">Delete</a></td>
+		</tr>
+
+		{%endfor%}
+	</table>
+
+</body>
+</html>

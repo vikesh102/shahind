@@ -1,0 +1,52 @@
+#customer{
+  background-color: #be9ec9;
+}
+
+#avail{
+  border-left: 30px;
+  border-right: 30px;
+  border-color: #282d3c;
+}
+
+#about{
+  background-color: #2a293e;
+}
+
+.ab{
+  padding-left:  80px;
+  padding-right: 80px;
+
+}
+
+#report{
+  background-color: #edf1ff;
+  border-right: 30px;
+  border-left: 30px;
+  border-color: #6b5876;
+
+}
+#contact{
+  background-color: #dfcfbe;
+}
+
+#con{
+  background-color: #f5df4d;
+}
+.bt{
+  background-color: yellow;
+  padding: 8px 12px 8px 12px;
+}
+
+p{
+  color: white;
+}
+
+#index{
+  border-bottom: 10px;
+  border-left: 19px;
+  border-right: 19px;
+}
+
+
+
+

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> </title>
+	<link rel="stylesheet" href="/static/shah.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+	{% load widget_tweaks %}
+</head>
+<body id="customer" >
+	<nav class="navbar navbar-default navbar-inverse">
+			<div class="container">
+		<div class="navbar-header">
+			
+			<a class="navbar-brand" href="/">Home</a>
+
+</div>
+
+	<p class="navbar-text navbar-right">  <a href="https://www.indiamart.com/shah-industries-silvassa/" class="navbar-link">Order from indiamart</a></p>
+
+
+	<ul class="nav navbar-nav ">
+		<li><a href="/contact">Contact Us</a></li>
+		<li><a href="/about">About</a></li>
+		<li><a href="/AvailableStock">Check Availability</a></li>
+
+	
+	</ul>
+</div>
+
+</nav>
+<h2 align="center"> <i>Kindly provide below details !!</i></h2>
+<br><br>
+<div class ="container">
+
+	  <form method="post">
+	  	<div class="container" align="center">
+  <div class="form-group">
+    <label for="FirstName">First Name</label>
+    {% render_field form.first_Name type="text" class="form-control" placeholder="First Name"%}
+  </div>
+   <div class="form-group">
+    <label for="lastname">Last Name</label>
+    {% render_field form.last_Name type="text" class="form-control" placeholder="Last Name"%}
+  </div>
+  <div class="form-group">
+    <label for="lastname">Produt Name</label>
+    {% render_field form.Product_Name type="text" class="form-control" placeholder="Product Name"%}
+  </div>
+   <div class="form-group">
+    <label for="Company_Name">Company Name</label>
+    {% render_field form.Company_Name type="text" class="form-control" placeholder="company name"%}
+  </div>
+   <div class="form-group">
+    <label for="Quantity_in_KG">Quantity_in_KG</label>
+    {% render_field form.Quantity_in_KG type="text" class="form-control" placeholder="enter quantity"%}
+  </div>
+   <div class="form-group">
+    <label for="Contact_Number">Contact Number</label>
+    {% render_field form.Contact_Number type="text" class="form-control" placeholder="contact number"%}
+  </div>
+
+
+
+  {%csrf_token%}
+
+
+	<input type="submit" name="" class="btn btn-success" value="Save">
+</div>
+</form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<br/><br/><br/><br/>
+<br/><br/><br/><br/>
+
+</body>
+</html>
